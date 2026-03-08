@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura Studio — Lumière Soul</title>
+
+    <!-- Google Fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- All fonts in one request -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <button id="menu-btn" aria-label="Toggle Navigation">
+          <svg
+            id="ham-menu"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+
+        <h3 class="logo">
+          <a href="./index.html">
+            <span class="top">LUMIÈRE</span>
+            <span class="bottom">SOUL</span>
+          </a>
+        </h3>
+
+        <div class="menu">
+          <ul class="navbar-list">
+            <li class="nav-li">
+              <a class="nav-a" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./about.html">ABOUT</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./services.html">SERVICES</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./index.html#projects">WORK</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== MOBILE SIDE MENU ========== -->
+    <div id="side-menu">
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./services.html">SERVICES</a></li>
+        <li><a href="./index.html#projects">WORK</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <!-- ========== CASE STUDY HEADER ========== -->
+      <section class="case-header">
+        <div class="container-normal">
+          <!-- Back link -->
+          <a href="./index.html#projects" class="back-link"
+            >← Back Projects</a
+          >
+
+          <!-- Project intro info -->
+          <div class="case-intro">
+            <small class="eyebrow">DIGITAL — 2026</small>
+            <h1 class="case-title">Aura Studio</h1>
+            <p class="case-tagline">
+              A calming digital presence crafted for a wellness and lifestyle
+              brand
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CASE STUDY BODY ========== -->
+      <section class="case-body">
+        <div class="container-normal">
+          <div class="case-layout">
+            <!-- LEFT - image sticks as you scroll -->
+            <div class="case-image-side">
+              <img src="./assets/price.jpg" alt="Aura Studio project " />
+            </div>
+
+            <!-- RIGHT - case study content -->
+            <div class="case-content-side">
+              <!-- Problem -->
+              <div class="case-block">
+                <small class="eyebrow">THE PROBLEM</small>
+                <p class="case-text">
+                  Aura Studio had built a devoted following through their
+                  wellness offerings but their digital presence told a different
+                  story. Their website felt cluttered and anxious — the opposite
+                  of everything their brand promised. They needed a digital home
+                  that felt as restorative as walking through their door.
+                </p>
+              </div>
+
+              <!-- Approach -->
+              <div class="case-block">
+                <small class="eyebrow">THE APPROACH</small>
+                <p class="case-text">
+                  Lumière Soul stripped everything back. We designed a minimal,
+                  breathable digital experience built on generous whitespace,
+                  soft tonal photography and a gentle typographic hierarchy.
+                  Every decision was filtered through one question — does this
+                  create calm or chaos?
+                </p>
+              </div>
+
+              <!-- Outcome -->
+              <div class="case-block">
+                <small class="eyebrow">THE OUTCOME</small>
+                <p class="case-text">
+                  Aura Studio launched to an immediate response from their
+                  community. The new digital presence reflected their values
+                  with precision — a fully responsive website, refined content
+                  strategy and a visual system that finally matched the
+                  stillness they had always stood for.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== NEXT PROJECT ========== -->
+      <section class="next-project">
+        <div class="container-normal">
+          <small class="eyebrow">NEXT PROJECT</small>
+          <a href="./obsidian.html" class="next-project-link">
+            Obsidian <span>→</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+      <div class="container-normal">
+        <!-- Footer logo -->
+        <div class="footer-logo">
+          <h2>LUMI&Egrave;RE SOUL</h2>
+        </div>
+        <!-- Footer navigation links -->
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./index.html#projects">Work</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Bottom row - socials and copyright -->
+        <div class="footer-bottom">
+          <!-- Social media links -->
+          <div class="footer-socials">
+            <ul>
+                <li>
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/anna-m-a535a1150/"
+                      >Linkedin</a
+                    >
+                  </li>
+                  <li><a href="" target="_blank">Github</a></li>
+                  <li>
+                    <a href="malito: playfulscript@outlook.com" target="_blank"
+                      >Email</a
+                    >
+                  </li>
+            </ul>
+          </div>
+          <!-- Copyright notice -->
+          <p class="copyright">
+            &copy; 2026 LUMI&Egrave;RE SOUL By Anna. All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

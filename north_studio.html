@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>North Studio — Lumière Soul</title>
+
+    <!-- Google Fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- All fonts in one request -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <button id="menu-btn" aria-label="Toggle Navigation">
+          <svg
+            id="ham-menu"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+
+        <h3 class="logo">
+          <a href="./index.html">
+            <span class="top">LUMIÈRE</span>
+            <span class="bottom">SOUL</span>
+          </a>
+        </h3>
+
+        <div class="menu">
+          <ul class="navbar-list">
+            <li class="nav-li">
+              <a class="nav-a" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./about.html">ABOUT</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./services.html">SERVICES</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./index.html#projects">WORK</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== MOBILE SIDE MENU ========== -->
+    <div id="side-menu">
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./services.html">SERVICES</a></li>
+        <li><a href="./index.html#projects">WORK</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <!-- ========== CASE STUDY HEADER ========== -->
+      <section class="case-header">
+        <div class="container-normal">
+          <!-- Back link -->
+          <a href="./index.html#projects" class="back-link"
+            >← Back to Projects</a
+          >
+
+          <!-- Project intro info -->
+          <div class="case-intro">
+            <small class="eyebrow">BRANDING — 2026</small>
+            <h1 class="case-title">North Studio</h1>
+            <p class="case-tagline">
+              Brand identity and visual storytelling for a Parisian floral
+              atelier
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CASE STUDY BODY ==========
+           Two column layout - image on left, content on right
+           ========================================= -->
+      <section class="case-body">
+        <div class="container-normal">
+          <div class="case-layout">
+            <!-- LEFT SIDE - image sticks alongside the content -->
+            <div class="case-image-side">
+              <img src="./assets/brand_2.jpg" alt="North Studio project" />
+            </div>
+
+            <!-- RIGHT SIDE - all the case study content -->
+            <div class="case-content-side">
+              <!-- Problem -->
+              <div class="case-block">
+                <small class="eyebrow">THE PROBLEM</small>
+                <p class="case-text">
+                  A Parisian floral atelier had outgrown its identity. Their
+                  craft was refined and deeply intentional, but their visual
+                  presence failed to communicate that quiet luxury. They needed
+                  an identity as considered as the arrangements they created.
+                </p>
+              </div>
+
+              <!-- Approach -->
+              <div class="case-block">
+                <small class="eyebrow">THE APPROACH</small>
+                <p class="case-text">
+                  Lumière Soul developed a soft editorial brand identity rooted
+                  in restraint. We drew from muted botanicals, refined serif
+                  typography and a restrained color palette of ivory, sage and
+                  warm stone — creating a visual language that whispers rather
+                  than shouts.
+                </p>
+              </div>
+
+              <!-- Outcome -->
+              <div class="case-block">
+                <small class="eyebrow">THE OUTCOME</small>
+                <p class="case-text">
+                  North Studio launched their new identity to immediate
+                  recognition within their community. The brand now includes a
+                  complete logo system, typography guidelines, color palette,
+                  packaging direction and social templates — all rooted in the
+                  same considered stillness that defines their work.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== NEXT PROJECT ========== -->
+      <section class="next-project">
+        <div class="container-normal">
+          <small class="eyebrow">NEXT PROJECT</small>
+          <a href="./aura_studio.html" class="next-project-link">
+            Aura Studio <span>→</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+      <div class="container-normal">
+        <!-- Footer logo -->
+        <div class="footer-logo">
+          <h2>LUMI&Egrave;RE SOUL</h2>
+        </div>
+        <!-- Footer navigation links -->
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./index.html#projects">Work</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Bottom row - socials and copyright -->
+        <div class="footer-bottom">
+          <!-- Social media links -->
+          <div class="footer-socials">
+            <ul>
+                <li>
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/anna-m-a535a1150/"
+                      >Linkedin</a
+                    >
+                  </li>
+                  <li><a href="" target="_blank">Github</a></li>
+                  <li>
+                    <a href="malito: playfulscript@outlook.com" target="_blank"
+                      >Email</a
+                    >
+                  </li>
+            </ul>
+          </div>
+          <!-- Copyright notice -->
+          <p class="copyright">
+            &copy; 2026 LUMI&Egrave;RE SOUL By Anna. All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for hamburger menu -->
+    <script src="script.js"></script>
+  </body>
+</html>

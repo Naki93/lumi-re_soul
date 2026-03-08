@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUMI&Egrave;RE SOUL</title>
+
+    <!-- Preconnect to Google Fonts servers for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- All fonts combined into one request -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+      <!-- nav-container keeps the navbar content centered and prevents it 
+           from stretching too wide on large screens -->
+      <div class="nav-container">
+        <!-- Hamburger menu button - shows on small screens, hidden on desktop -->
+        <button id="menu-btn" aria-label="Toggle Navigation">
+          <!-- Hamburger icon (SVG from Bootstrap Icons) -->
+          <svg
+            id="ham-menu"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+        <!-- Logo - clicking this would take the user to the homepage -->
+        <h3 class="logo">
+          <a href="./index.html">
+            <span class="top">LUMI&Egrave;RE</span>
+            <span class="bottom">SOUL</span>
+          </a>
+        </h3>
+        <!-- Navigation menu - the list of page links -->
+        <div class="menu">
+          <ul class="navbar-list">
+            <li class="nav-li">
+              <a class="nav-a" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./about.html">ABOUT</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./services.html">SERVICES</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./index.html#projects">WORK</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ========== Side Navbar ========== -->
+    <!-- ========== MOBILE SIDE MENU ==========
+     Full screen overlay menu that appears on mobile
+     when the hamburger button is clicked
+     Hidden by default, shown when .active is added via JS
+     ========================================= -->
+    <div id="side-menu">
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./services.html">SERVICES</a></li>
+        <li><a href="./index.html#projects">WORK</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+    <!-- ========== ABOUT PAGE HERO SECTION ==========
+     
+     ================================================ -->
+    <main>
+      <section class="hero-section about-section">
+        <!-- container-normal keeps content centered and not too wide -->
+        <div class="container-normal">
+          <!-- Reuses .hero-content but adds .about-content for any
+         about-specific styling overrides -->
+          <div class="hero-content about-content">
+            <small class="eyebrow">THE VISION</small>
+            <!-- Main heading for the about page -->
+            <h1 class="main-hero-heading">
+              Designing for the space between the noise
+            </h1>
+            <!-- Subtext description paragraph -->
+            <!-- .italic spans are used to italicise specific words -->
+            <p class="subtext">
+              Lumiere Soul was born from a fascination with the invisible
+              architecture that holds a digital space together. We believe a
+              website is a living structure-one that requires precise
+              <span class="italic">kerning</span>, a disciplined
+              <span class="italic">hierachy</span> and the courage to leave
+              space empty
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ABOUT QUOTE SECTION ==========
+       Displays a well known design quote with author credit
+       and a call to action button below
+       ============================================ -->
+      <section class="about-quote">
+        <div class="container-normal">
+          <!-- Large quote text - .quote-italic italicises part of the quote -->
+          <h2 class="quote">
+            Design is the <span class="quote-italic">silent ambassador</span> of
+            your brand.
+          </h2>
+          <!-- Quote author credit  -->
+          <small class="quotte-author">_ PAUL RAND</small>
+        </div>
+        <!-- Call to action button sits outside the container 
+         so it can be positioned/centered independently -->
+        <br />
+        <div class="about-button">
+          <a href="./services.html">
+            <button>Explore our services</button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+      <div class="container-normal">
+        <div class="footer-logo">
+          <h2>LUMI&Egrave;RE SOUL</h2>
+        </div>
+        <!-- Main Navigation -->
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./index.html#projects">Work</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-bottom">
+          <div class="footer-socials">
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/anna-m-a535a1150/"
+                  >Linkedin</a
+                >
+              </li>
+              <li><a href="" target="_blank">Github</a></li>
+              <li>
+                <a href="malito: playfulscript@outlook.com" target="_blank"
+                  >Email</a
+                >
+              </li>
+            </ul>
+          </div>
+          <p class="copyright">
+            &copy; 2026 LUMI&Egrave;RE SOUL By Anna. All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>

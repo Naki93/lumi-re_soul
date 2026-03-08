@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUMI&Egrave;RE SOUL</title>
+    <!-- Preconnect to Google Fonts servers for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- All fonts combined into one request -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+      <!-- nav-container keeps the navbar content centered and prevents it 
+           from stretching too wide on large screens -->
+      <div class="nav-container">
+        <!-- Hamburger menu button - shows on small screens, hidden on desktop -->
+        <button id="menu-btn" aria-label="Toggle Navigation">
+          <!-- Hamburger icon (SVG from Bootstrap Icons) -->
+          <svg
+            id="ham-menu"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+        <h3 class="logo">
+          <a href="./index.html">
+            <span class="top">LUMI&Egrave;RE</span>
+            <span class="bottom">SOUL</span>
+          </a>
+        </h3>
+        <div class="menu">
+          <ul class="navbar-list">
+            <li class="nav-li">
+              <a class="nav-a" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./about.html">ABOUT</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./services.html">SERVICES</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./index.html#projects">WORK</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="./contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ========== Side Navbar ========== -->
+    <!-- ========== MOBILE SIDE MENU ==========
+     Full screen overlay menu that appears on mobile
+     when the hamburger button is clicked
+     Hidden by default, shown when .active is added via JS
+     ========================================= -->
+    <div id="side-menu">
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./services.html">SERVICES</a></li>
+        <li><a href="./index.html#projects">WORK</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+    <main>
+      <!-- ========== SERVICES / CAPABILITIES SECTION ==========
+       Reuses .projects-section styling from index but adds
+       .capabilities as an extra class for specific overrides
+       ======================================================= -->
+      <section class="projects-section capabilities">
+        <div class="container-normal">
+          <!-- Eyebrow text above the section title -->
+          <small class="eyebrow">OUR CAPABILITIES</small>
+          <!-- Section heading -->
+          <h2 class="section-title">Curated Offerings</h2>
+          <div class="projects-grid">
+            <!-- ===== CARD 1 - Branding ===== -->
+            <div class="project-card">
+              <div class="card-text">
+                <h3 class="card-title">
+                  01 <br />
+                  Branding
+                </h3>
+                <ul>
+                  <li>Visual Identity</li>
+                  <li>Logo Architecture</li>
+                  <li>Color Theory</li>
+                  <li>Brand Guidelines</li>
+                </ul>
+                <small>From R3000</small> <br /><br />
+                <!-- Links to the matching case study -->
+                <a href="./north_studio.html" class="card-link"
+                  >See it in action →</a
+                >
+              </div>
+              <div class="card-image">
+                <img src="./assets/brand_2.jpg" alt="Lumiere soul project" />
+              </div>
+            </div>
+            <!-- ===== CARD 2 - Digital ===== -->
+            <div class="project-card">
+              <div class="card-text">
+                <h3 class="card-title">
+                  02 <br />
+                  Digital
+                </h3>
+                <ul>
+                  <li>Web Design</li>
+                  <li>UX UI Strategy</li>
+                  <li>Responsive Build</li>
+                  <li>Interaction Design</li>
+                </ul>
+                <small>From R3000</small>
+                <br />
+                <br />
+                <!-- Links to the matching case study -->
+                <a href="./aura_studio.html" class="card-link"
+                  >See it in action →</a
+                >
+              </div>
+              <div class="card-image">
+                <img src="./assets/ux.jpg" alt="Lumiere soul project" />
+              </div>
+            </div>
+            <!-- ===== CARD 3 - Content ===== -->
+            <div class="project-card">
+              <div class="card-text">
+                <h3 class="card-title">03 <br />Content</h3>
+                <ul>
+                  <li>Copywriting</li>
+                  <li>Art Direction</li>
+                  <li>Digital Assets</li>
+                  <li>Motion Design</li>
+                </ul>
+                <small>From R3000</small>
+                <br />
+                <br />
+                <!-- Links to the matching case study -->
+                <a href="./obsidian.html" class="card-link"
+                  >See it in action →</a
+                >
+              </div>
+              <div class="card-image">
+                <img src="./assets/type.jpg" alt="Lumiere soul project" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+      <div class="container-normal">
+        <div class="footer-logo">
+          <h2>LUMI&Egrave;RE SOUL</h2>
+        </div>
+        <!-- Main Navigation -->
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./index.html#projects">Work</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-bottom">
+          <div class="footer-socials">
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/anna-m-a535a1150/"
+                  >Linkedin</a
+                >
+              </li>
+              <li><a href="" target="_blank">Github</a></li>
+              <li>
+                <a href="malito: playfulscript@outlook.com" target="_blank"
+                  >Email</a
+                >
+              </li>
+            </ul>
+          </div>
+          <p class="copyright">
+            &copy; 2026 LUMI&Egrave;RE SOUL By Anna. All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
