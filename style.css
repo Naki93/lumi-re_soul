@@ -35,8 +35,7 @@ body {
 
 /* ============================================================
    LOGO
-   - Uses flexbox column to stack "LUMIÈRE" on top of "SOUL"
-   - line-height: 0.9 closes the gap between the two words
+   
    ============================================================ */
 
 h3.logo a {
@@ -192,12 +191,7 @@ svg#ham-menu {
 
 /* ============================================================
      MOBILE SIDE MENU
-     - position: fixed keeps it locked to the screen even 
-       when the user scrolls
-     - top: 70px pushes it below the navbar
-     - calc(100vh - 70px) fills exactly the rest of the screen
-       height below the navbar - this is correct use of calc()!
-     - z-index: 1000 keeps it on top of all other content
+    
      ============================================================ */
 #side-menu {
   display: none;
@@ -589,7 +583,7 @@ button {
 
 /* ============================================================
    ABOUT QUOTE SECTION
-   Large padding on top creates breathing room above the quote
+   
    ============================================================ */
 
 .about-quote {
@@ -628,8 +622,7 @@ h2.quote {
 
 /* ============================================================
    ABOUT HERO - background image sits on the LEFT side
-   Text content floats to the right (opposite of index hero
-   where image was on the right)
+   Text content floats to the right 
    ============================================================ */
 
 /* Sets the lavender background image on the left */
@@ -895,9 +888,8 @@ h2.quote {
    ============================================================ */
 
 /* Outer footer wrapper
-   margin-top: auto is the KEY line that pushes the footer 
-   to the bottom of the page - it works because body has 
-   display: flex and flex-direction: column              */
+   margin-top: auto pushes the footer 
+   to the bottom of the page              */
 .main-footer {
   margin-top: auto;
   padding: 100px 0 60px 0;
@@ -976,7 +968,7 @@ h2.quote {
 /* ============================================================
    FOOTER BOTTOM - MOBILE (768px and below)
    Stacks the social links and copyright on top of each other
-   instead of sitting side by side which causes overflow
+   
    ============================================================ */
 @media screen and (max-width: 768px) {
   /* Stack socials and copyright vertically */
