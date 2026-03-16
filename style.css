@@ -500,6 +500,10 @@ button {
    3 equal columns on desktop, collapses to 1 on mobile
    ============================================================ */
 
+.background{
+   background: #f7f7f3;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
