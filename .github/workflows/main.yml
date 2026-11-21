@@ -1,0 +1,11 @@
+name: Web App CI Check
+
+on: [push]
+
+jobs:
+  verify-website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify website files
+        run: ls -la && test -f index.html && echo "SUCCESS index.html verified"
